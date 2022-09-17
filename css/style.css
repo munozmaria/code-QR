@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(to left, #fdc5fa, #a542f6);
+}
+body .container {
+  height: 500px;
+  max-width: 450px;
+  border-radius: 25px;
+  background-color: rgb(213, 241, 241);
+  position: absolute;
+  padding: 16px 25px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 25px 45px rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+body header {
+  color: rgb(252, 252, 252);
+  text-align: center;
+}
+body header h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+body header p {
+  font-size: 18px;
+}
+body .form {
+  margin-top: 20px;
+}
+body .form input {
+  width: 100%;
+  height: 40px;
+  padding: 13px;
+  border: 1px solid #ccc;
+  z-index: 3;
+  outline: none;
+  font-size: 16px;
+  border-radius: 25px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+body .form input:hover {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+}
+body .form button {
+  cursor: pointer;
+  color: rgb(251, 253, 253);
+  font-size: 17px;
+  padding: 10px 25px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background-color: #f5f5f5;
+  outline: none;
+  width: 100%;
+  margin-top: 20px;
+  background: linear-gradient(to right, #26142a 0%, #f98fe7 51%, #e18efd 100%);
+  transition: all 0.5s ease-in-out;
+  background-size: 200% auto;
+}
+body .form button:hover {
+  background-position: right;
+  transform: scale(1.03);
+}
+body .qr-code {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px;
+  padding: 23px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+body .qr-code #telecharger {
+  width: 35%;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 20px;
+  color: rgb(213, 241, 241);
+  background: rgb(69, 69, 69);
+  cursor: pointer;
+}
+body .qr-code #telecharger:hover {
+  color: rgb(24, 24, 24);
+  background: #fff;
+}/*# sourceMappingURL=style.css.map */
