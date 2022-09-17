@@ -12,7 +12,8 @@ body {
 	background: linear-gradient(to left, #fdc5fa, #a542f6);
 
 	.container {
-		height: 500px;
+		height: 260px;
+		transition: height 0.2s ease;
 		max-width: 450px;
 		border-radius: 25px;
 		background-color: rgb(213, 241, 241);
@@ -91,6 +92,11 @@ body {
 		padding: 23px 0;
 		background: rgba(255, 255, 255, 0.2);
 		border-radius: 5px;
+
+
+		opacity: 0;
+            pointer-events: none;
+
 		
 
 		#telecharger {
@@ -108,4 +114,16 @@ body {
 			}
 		}
 	}
+
+.container.active {
+        height: 530px;
+    }
+
+    .container.active .qr-code {
+        opacity: 1;
+        pointer-events: auto;
+        transition: opacity 0.5s 0.05s ease;
+    }
+
+
 }
